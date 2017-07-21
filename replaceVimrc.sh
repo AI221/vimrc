@@ -1,6 +1,6 @@
 #!/bin/bash
 #to run:
-curl -S https://raw.githubusercontent.com/AI221/vimrc/master/replaceVimrc.sh | bash
+# curl -S https://raw.githubusercontent.com/AI221/vimrc/master/replaceVimrc.sh | bash
 
 cd
 mv .vimrc .oldvimrc
