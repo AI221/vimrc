@@ -55,7 +55,7 @@ let g:ycm_key_list_stop_completion = ['<C-y>']
 :command W :w " Fixes the annoying time where you don't release shift quick enough before writing.
 :command Wq :wq "^
 :command Test :echo 'Testing, 1... 2... 3..'
-:command Notes :echo 'ins-completion , '
+:command Notes :echo 'ins-completion , G=gg'
 :map tn :tabnew 
 :set autoindent
 ":compiler gcc
@@ -92,6 +92,9 @@ let g:ycm_key_list_stop_completion = ['<C-y>']
 
 "Map f1 to switch to header file
 :map <F1> :A<CR>
+
+"Map f2 to open/close the tag menu
+:nmap <F2> :TagbarToggle<CR>
 
 " Better command-line completion
 :set wildmenu
