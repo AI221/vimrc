@@ -39,7 +39,17 @@ let g:ycm_key_list_stop_completion = ['<C-y>']
 "only change here is removing up/down array keys from this.
 let g:ycm_key_list_select_completion = ['<TAB>']
 
-let g:ycm_key_list_select_completion = ['<TAB>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>']
+
+
+"Ctrl-y in insert mode also holds the behaviour of appening the character
+"above the cursor. This adds ctrl-e to the binding to stop completion, and
+"causes <down> to automatically press ctrl-e , thus making down close the
+"completion menu and move your cursor down. Whew.
+:let g:ycm_key_list_stop_completion = ['<C-y>','<C-e>']
+:inoremap <Down> <C-e><Down>
+:inoremap <Up> <C-e><Up>
+
 
 
 "Note that there is a vim-youcompleteme package on Debian. 
